@@ -2900,6 +2900,64 @@
             .appt-banner::before {
                 display: none;
             }
+
+            /* Responsive Health Tools Grid & Modals Optimization */
+            @media (max-width: 768px) {
+                .tools-grid {
+                    grid-template-columns: 1fr 1fr;
+                    gap: 16px;
+                    margin-top: 40px;
+                }
+                .tool-card {
+                    padding: 24px 20px;
+                }
+            }
+
+            @media (max-width: 550px) {
+                .tools-grid {
+                    grid-template-columns: 1fr;
+                    gap: 16px;
+                }
+                .modal-box {
+                    padding: 28px 20px 24px;
+                    border-radius: 16px;
+                }
+                .modal-title {
+                    font-size: 1.45rem;
+                    margin-top: 8px;
+                }
+                .modal-sub {
+                    font-size: 0.78rem;
+                    margin-bottom: 20px;
+                    line-height: 1.4;
+                }
+                .tool-question {
+                    font-size: 0.85rem;
+                    margin-bottom: 10px;
+                }
+                .tool-options {
+                    gap: 8px;
+                    margin-bottom: 16px;
+                }
+                .tool-option {
+                    padding: 6px 14px;
+                    font-size: 0.74rem;
+                }
+                .modal-close {
+                    top: 14px;
+                    right: 14px;
+                    width: 32px;
+                    height: 32px;
+                    font-size: 0.9rem;
+                }
+                .tool-result {
+                    padding: 18px;
+                    margin-top: 16px;
+                }
+                .result-score {
+                    font-size: 2.2rem;
+                }
+            }
         }
     </style>
 </head>
